@@ -10,6 +10,7 @@ local servers = {
   "rust_analyzer",
   -- "pylsp",
   "pyright",
+  "rust_analyzer",
   -- "jedi_language_server",
 }
 
@@ -30,6 +31,9 @@ lspconfig.tsserver.setup {
 }
 
 lspconfig.pyright.setup {
+  on_attach = on_attach,
+  on_init = on_init,
+  capabilities = capabilities,
   settings = {
     python = {
       analysis = {
@@ -37,6 +41,7 @@ lspconfig.pyright.setup {
         -- extraPaths = { "./" },
         autoImportCompletions = true,
         autoSearchPaths = true,
+        diagnosticMode = "workspace",
       },
     },
   },

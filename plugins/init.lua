@@ -64,24 +64,17 @@ return {
     event = "BufEnter",
   },
 
-  -- chat gpt
+  -- todo-coments
   {
-    "jackMort/ChatGPT.nvim",
-    event = "VeryLazy",
-    config = function()
-      require("chatgpt").setup()
-    end,
-    dependencies = {
-      "MunifTanjim/nui.nvim",
-      "nvim-lua/plenary.nvim",
-      "folke/trouble.nvim",
-      "nvim-telescope/telescope.nvim",
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    event = "BufReadPost",
+    opts = {
+      -- your configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
     },
-    -- config = function()
-    -- require "configs.chatgpt"
-    -- end,
   },
-
   -- Emogi
   {
     "hrsh7th/nvim-cmp",
@@ -118,6 +111,7 @@ return {
     config = function()
       require("dapui").setup()
     end,
+    -- keys = { "<leader>du" },
     dependencies = {
       {
         "mfussenegger/nvim-dap",
@@ -128,7 +122,17 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-neotest/nvim-nio",
     },
-    lazy = false,
   },
-  -- rust-tools
+
+  -- color picker
+  {
+    "uga-rosa/ccc.nvim",
+    keys = { "<leader>p" },
+    cmd = "CccPick",
+    -- lazy = false,
+    -- ft = { "html", "css", "scss", "svelte" },
+    config = function()
+      require("ccc").setup()
+    end,
+  },
 }

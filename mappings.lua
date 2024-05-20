@@ -29,3 +29,7 @@ map("n", "<leader>dt", "<cmd>lua require'dap'.terminate()<CR>", { desc = "Termin
 -- dapui
 map("n", "<leader>du", "<cmd>lua require'dapui'.toggle()<CR>", { desc = "Toggle UI" })
 map("n", "<leader>de", "<cmd>lua require'dapui'.eval()<CR>", { desc = "Evaluate" })
+
+-- color picker
+map("n", "<leader>pc", "<cmd>:CccPick<CR>", { desc = "Color Picker" })
+map("i", "<C-c>", "<ESC>:CccPick<CR>", { desc = "Color Picker" })

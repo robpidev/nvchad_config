@@ -7,8 +7,8 @@ o.cursorlineopt = "both" -- to enable cursorline!
 
 vim.cmd "set nowrap"
 vim.cmd "set relativenumber"
-vim.cmd [[
 
+vim.cmd [[
 augroup numbertoggle
   autocmd!
   autocmd BufEnter,FocusGained,InsertLeave * if &nu | set rnu   | endif
@@ -23,3 +23,5 @@ vim.o.cul = "both"
 vim.opt.shell = "pwsh"
 vim.opt.shellcmdflag = "-Command"
 vim.opt.shellxquote = ""
+
+-- Cargar configuraciones específicas del proyecto si existen
