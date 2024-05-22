@@ -41,7 +41,7 @@ lspconfig.pyright.setup {
         -- extraPaths = { "./" },
         autoImportCompletions = true,
         autoSearchPaths = true,
-        diagnosticMode = "workspace",
+        -- diagnosticMode = "workspace",
       },
     },
   },
