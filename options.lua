@@ -17,7 +17,7 @@ augroup numbertoggle
 augroup END
 ]]
 
-vim.o.cul = "both"
+-- vim.o.cul = "both"
 
 -- Configurar PowerShell como la shell predeterminada
 vim.opt.shell = "pwsh"
