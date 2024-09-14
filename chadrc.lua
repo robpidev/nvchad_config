@@ -21,11 +21,11 @@ M.ui = {
   -- 	Comment = { italic = true },
   -- 	["@comment"] = { italic = true },
   -- },
-  term = {
-    terminals = {
-      shell = "pwsh",
-    },
-  },
+  -- term = {
+  --   terminals = {
+  --     shell = "pwsh",
+  --   },
+  -- },
 }
 
 return M
