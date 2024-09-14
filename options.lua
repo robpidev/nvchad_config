@@ -22,6 +22,8 @@ augroup END
 -- Configurar PowerShell como la shell predeterminada
 vim.opt.shell = "pwsh"
 vim.opt.shellcmdflag = "-Command"
+vim.opt.shellquote = ""
 vim.opt.shellxquote = ""
 
 -- Cargar configuraciones específicas del proyecto si existen
+vim.lsp.inlay_hint.enable(true)

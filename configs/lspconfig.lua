@@ -10,7 +10,7 @@ local servers = {
   "rust_analyzer",
   -- "pylsp",
   "pyright",
-  "rust_analyzer",
+  "svelte",
   -- "jedi_language_server",
 }
 
@@ -24,7 +24,7 @@ for _, lsp in ipairs(servers) do
 end
 
 -- typescript
-lspconfig.tsserver.setup {
+lspconfig.ts_ls.setup {
   on_attach = on_attach,
   on_init = on_init,
   capabilities = capabilities,
