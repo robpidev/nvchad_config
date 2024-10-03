@@ -9,9 +9,9 @@ local M = {
     cmp = {
       icons_left = true,
       style = "default",
-      format_colors = {
-        tailwind = true,
-      }
+      -- format_colors = {
+      --   tailwind = true,
+      -- }
     }
   },
 }

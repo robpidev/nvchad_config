@@ -27,3 +27,6 @@ augroup END
 
 -- Cargar configuraciones específicas del proyecto si existen
 vim.lsp.inlay_hint.enable(true)
+
+-- Cmdline only shows in cmd
+vim.o.cmdheight = 0
